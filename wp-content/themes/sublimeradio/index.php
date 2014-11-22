@@ -10,12 +10,12 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="../wp-content/themes/sublimeradio/css/bootstrap.min.css">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css">
         <link href='http://fonts.googleapis.com/css?family=Raleway:800,500,400' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="../wp-content/themes/sublimeradio/css/main.css">
-        <link rel="icon" href="../wp-content/themes/sublimeradio/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/main.css">
+        <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" type="image/x-icon" />
 
-        <script src="../wp-content/themes/sublimeradio/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -79,11 +79,11 @@
 	
 	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="../wp-content/themes/sublimeradio/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
 
-        <script src="../wp-content/themes/sublimeradio/js/vendor/bootstrap.min.js"></script>
+        <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/bootstrap.min.js"></script>
 
-        <script src="../wp-content/themes/sublimeradio/js/main.js"></script>
+        <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

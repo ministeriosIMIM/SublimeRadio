@@ -1,0 +1,27 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?-fujowb');
+	src:url('../fonts/icomoon.eot?#iefix-fujowb') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-fujowb') format('woff'),
+		url('../fonts/icomoon.ttf?-fujowb') format('truetype'),
+		url('../fonts/icomoon.svg?-fujowb#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icono-"], [class*=" icono-"], [class^="logo-"], [class*=" logo-"] {
+	@include icon();
+	@include transicion-basica();
+}
+
+.logo:before {
+	content: $logo;
+}
+
+.logo-a:before {
+	content: $logo-a;
+}
+
+.logo-b:after {
+	content: $logo-b;
+}
