@@ -16,13 +16,13 @@
 
 // ** Ajustes de MySQL. Solicita estos datos a tu proveedor de alojamiento web. ** //
 /** El nombre de tu base de datos de WordPress */
-define('DB_NAME', 'sublimer_dev');
+define('DB_NAME', 'nombredetubasededatos');
 
 /** Tu nombre de usuario de MySQL */
-define('DB_USER', 'sublimer_admin');
+define('DB_USER', 'nombredeusuario');
 
 /** Tu contraseña de MySQL */
-define('DB_PASSWORD', 'Subl1m3D@t4');
+define('DB_PASSWORD', 'contraseña');
 
 /** Host de MySQL (es muy probable que no necesites cambiarlo) */
 define('DB_HOST', 'localhost');
