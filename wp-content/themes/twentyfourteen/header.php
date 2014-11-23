@@ -42,7 +42,11 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="header-main">
+<<<<<<< HEAD
+			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+=======
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>Por fin! sera? sera...? ya casi!!! otra más! y otra! sin www-data</h1>
+>>>>>>> dev
 
 			<div class="search-toggle">
 				<a href="#search-container" class="screen-reader-text"><?php _e( 'Search', 'twentyfourteen' ); ?></a>
