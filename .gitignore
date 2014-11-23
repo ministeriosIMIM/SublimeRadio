@@ -1,9 +1,6 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> dev
 *.log
 .htaccess
+.sass-cache/
 sitemap.xml
 sitemap.xml.gz
 wp-config.php
