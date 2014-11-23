@@ -12,7 +12,7 @@
 
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css">
         <link href='http://fonts.googleapis.com/css?family=Raleway:800,500,400' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/main.css">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
         <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" type="image/x-icon" />
 
         <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
