@@ -2,6 +2,10 @@
     font-family: 'Raleway', sans-serif;
 }
 
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
 a {
     @include transicion-rapida();
 }
