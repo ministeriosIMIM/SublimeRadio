@@ -14,6 +14,8 @@
 	@include transicion-basica();
 }
 
+//logo
+
 .logo:before {
 	content: $logo;
 }
@@ -24,4 +26,26 @@
 
 .logo-b:after {
 	content: $logo-b;
+}
+
+.logo-mini:before {
+	content: $logo-mini;
+}
+
+.logo-mini-a:before {
+	content: $logo-mini-a;
+}
+
+.logo-mini-b:after {
+	content: $logo-mini-b;
+}
+
+//iconos
+
+.icono-twitter:before {
+	content: $icono-twitter;
+}
+
+.icono-facebook:before {
+	content: $icono-facebook;
 }
