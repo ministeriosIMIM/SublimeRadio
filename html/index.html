@@ -24,12 +24,18 @@
         <header id="header">
         	<div class="container">
             	<h1 id="logo">
-                	<a href="index.html"><i class="logo-a logo-b"></i>Sublime Radio</a>
+                	<a href="index.html"><i class="logo-a logo-b"></i><i class="logo-mini-a logo-mini-b"></i>Sublime Radio</a>
                 </h1>
             	<nav id="menu-principal">
                 	<div class="navbar-header">
+                        <button type="button" class="navbar-toggle  collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+              			</button>
                     </div>
-                	<div class="navbar navbar-collapse">
+                	<div class="navbar-collapse collapse">
                         <ul class="redes-sociales">
                     		<li><a class="link-twitter" href="#"><i class="icono-twitter"></i>¡Síguenos por Twitter!</a></li>
                     		<li><a class="link-facebook" href="#"><i class="icono-facebook"></i>¡Síguenos por Facebook!</a></li>
