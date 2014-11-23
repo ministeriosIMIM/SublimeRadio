@@ -3,6 +3,10 @@
 	display: block;
 	height: auto;
 	background-color: white;
+<<<<<<< HEAD
+=======
+	z-index: 5;
+>>>>>>> dev
 	@include transicion-basica();
 
 	@media(min-width: 768px) {
@@ -38,6 +42,10 @@
 			}
 
 			@media(min-width: 992px) {
+<<<<<<< HEAD
+=======
+				left: 20px;
+>>>>>>> dev
 				bottom: -60px;
 				width: 120px;
 			}
