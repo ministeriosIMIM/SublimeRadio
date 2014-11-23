@@ -1,0 +1,24 @@
+input {
+    height: 48px !important;
+    line-height: 48px !important;
+    display: block !important;
+    border: 3px solid $azul-aguamarina !important;
+     background-color: lighten($azul-rey, 3%) !important;
+    font-size: 1.5em !important;
+    color: white !important;
+    @include border-radius(14px !important);
+    @include transicion-basica();
+
+    @include input-placeholder {
+        color: darken($azul-aguamarina, 10%) !important;
+        @include transicion-basica();
+    }
+
+    &:focus {
+            background-color: lighten($azul-rey, 5%) !important;
+
+            @include input-placeholder {
+            color: $azul-aguamarina !important;
+        }
+    }
+}
