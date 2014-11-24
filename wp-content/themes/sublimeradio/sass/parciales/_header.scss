@@ -6,6 +6,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+	z-index: 5;
+>>>>>>> dev
 =======
 	z-index: 5;
 >>>>>>> dev
@@ -53,6 +57,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+				left: 20px;
+>>>>>>> dev
 =======
 				left: 20px;
 >>>>>>> dev
@@ -232,6 +240,10 @@
 				
 				//max-height: 100%;
 				@include transicion-basica();
+<<<<<<< HEAD
+=======
+				@include gpu-aceleracion();
+>>>>>>> dev
 
 				@media(min-width: 768px) {
 					position: absolute;
@@ -244,6 +256,7 @@
 					margin: 0;
 					padding: 0;
 					@include transicion-basica();
+					@include gpu-aceleracion();
 
 					&.redes-sociales {
 						position: absolute;
@@ -344,6 +357,7 @@
 							margin: 0;
 							padding: 0;
 							@include transicion-basica();
+							@include gpu-aceleracion();
 
 							&.main-menu-item {
 								display: block;
@@ -402,6 +416,7 @@
 									padding-top: 2px;
 									@include opacity(0);
 									@include transicion-basica();
+									@include gpu-aceleracion();
 
 									.sub-menu-item {
 										display: block;
@@ -418,6 +433,7 @@
 											padding: 12px 0px;
 											width: 100%;
 											@include transicion-rapida();
+											@include gpu-aceleracion();
 
 											&:after {
 												display: none;
