@@ -209,8 +209,8 @@
 				right: 0;
 				
 				//max-height: 100%;
-				@include transicion-basica();
-				@include gpu-aceleracion();
+				//HACER FUNCIÓN PARA TRANSICIONES CON PROPIEDADES ESPECÍFICAS POR PERFORMANCE, ES DECIR AGREGAR PARÁMETROS A "transicion-basica();" 
+				@include transicion-basica(); 
 
 				@media(min-width: 768px) {
 					position: absolute;
@@ -223,7 +223,6 @@
 					margin: 0;
 					padding: 0;
 					@include transicion-basica();
-					@include gpu-aceleracion();
 
 					&.redes-sociales {
 						position: absolute;
@@ -324,7 +323,6 @@
 							margin: 0;
 							padding: 0;
 							@include transicion-basica();
-							@include gpu-aceleracion();
 
 							&.main-menu-item {
 								display: block;
@@ -383,7 +381,6 @@
 									padding-top: 2px;
 									@include opacity(0);
 									@include transicion-basica();
-									@include gpu-aceleracion();
 
 									.sub-menu-item {
 										display: block;
@@ -400,7 +397,6 @@
 											padding: 12px 0px;
 											width: 100%;
 											@include transicion-rapida();
-											@include gpu-aceleracion();
 
 											&:after {
 												display: none;
@@ -518,4 +514,16 @@
 		border-bottom: solid 3px $azul-rey;
 		z-index: 1;
 	}
+}
+
+#slider, #cancion {
+	@include transicion-basica();
+}
+
+#header.in + #slider {
+	@include transform(translateY(200px));
+}
+
+#header.in + #slider + #cancion {
+	@include transform(translateY(180px));
 }
