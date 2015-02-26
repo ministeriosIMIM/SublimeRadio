@@ -1,4 +1,9 @@
 Icon?*
+
+#Eliminar el archivo ‘Icon?’ (generado por Google Drive) de la carpeta ‘.git’ en el terminal (Mac OSX):
+#cd .git
+#find . -name 'Icon?*' -type f -delete
+
 *.log
 .htaccess
 .sass-cache/
