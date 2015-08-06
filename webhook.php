@@ -16,7 +16,7 @@
   *
 **/
 // Set Variables
-$LOCAL_ROOT         = "~/../home/sublimeradio";
+$LOCAL_ROOT         = "~/../../home/sublimeradio";
 $LOCAL_REPO_NAME    = "public_html/prueba";
 $LOCAL_REPO         = "{$LOCAL_ROOT}/{$LOCAL_REPO_NAME}";
 $REMOTE_REPO        = "git@github.com:ministeriosIMIM/SublimeRadio.git";
