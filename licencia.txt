@@ -1,4 +1,4 @@
-
+texto
 		    GNU  GENERAL PUBLIC LICENSE
 		       Version 2, Junio 1991
 
