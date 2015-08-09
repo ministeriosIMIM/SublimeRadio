@@ -21,7 +21,7 @@
 $LOCAL_ROOT         = "/home/sublimeradio";
 $LOCAL_REPO_NAME    = "public_html/dev";
 $LOCAL_REPO         = "{$LOCAL_ROOT}/{$LOCAL_REPO_NAME}";
-$REMOTE_REPO        = "git@github.com:ministeriosIMIM/SublimeRadio.git";
+$REMOTE_REPO        = "git@github.com:ministeriosIMIM/sublimeradio.git";
 $BRANCH             = "dev";
 
 if ( $_POST['payload'] ) {
