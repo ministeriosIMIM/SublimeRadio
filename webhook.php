@@ -16,11 +16,14 @@
   *
 **/
 // Set Variables
-$LOCAL_ROOT         = "~/../../home/sublimeradio";
-$LOCAL_REPO_NAME    = "public_html/prueba";
+// El usuario para que ejecuta este script es 'nobody'
+
+$LOCAL_ROOT         = "/home/sublimeradio";
+$LOCAL_REPO_NAME    = "public_html/dev";
 $LOCAL_REPO         = "{$LOCAL_ROOT}/{$LOCAL_REPO_NAME}";
 $REMOTE_REPO        = "git@github.com:ministeriosIMIM/SublimeRadio.git";
 $BRANCH             = "dev";
+
 if ( $_POST['payload'] ) {
   // Only respond to POST requests from Github
   
@@ -29,6 +32,9 @@ if ( $_POST['payload'] ) {
     // If there is already a repo, just run a git pull to grab the latest changes
     shell_exec("cd {$LOCAL_REPO} && git pull");
     die("done " . mktime());
+	
+	
+	
   } else {
     
     // If the repo does not exist, then clone it into the parent directory
