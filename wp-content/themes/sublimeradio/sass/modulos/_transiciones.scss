@@ -1,7 +1,0 @@
-@mixin transicion-basica {
-	@include transition(all ease-in-out 0.2s);
-}
-
-@mixin transicion-rapida {
-	@include transition(all ease-in-out 0.12s);
-}
