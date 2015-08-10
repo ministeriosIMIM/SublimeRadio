@@ -1,0 +1,5 @@
+@mixin gpu-aceleracion {
+	@include translateZ(0);
+	@include backface-visibility(hidden);
+	@include perspective(1000);
+}

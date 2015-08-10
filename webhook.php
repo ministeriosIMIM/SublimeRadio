@@ -19,10 +19,17 @@
 // El usuario para que ejecuta este script es 'nobody'
 
 $LOCAL_ROOT         = "/home/sublimeradio";
+<<<<<<< HEAD:webhook.php
 $LOCAL_REPO_NAME    = "public_html";
 $LOCAL_REPO         = "{$LOCAL_ROOT}/{$LOCAL_REPO_NAME}";
 $REMOTE_REPO        = "git@github.com:ministeriosIMIM/sublimeradio.git";
 $BRANCH             = "master";
+=======
+$LOCAL_REPO_NAME    = "public_html/dev";
+$LOCAL_REPO         = "{$LOCAL_ROOT}/{$LOCAL_REPO_NAME}";
+$REMOTE_REPO        = "git@github.com:ministeriosIMIM/sublimeradio.git";
+$BRANCH             = "dev";
+>>>>>>> dev:webhook.php
 
 if ( $_POST['payload'] ) {
   // Only respond to POST requests from Github

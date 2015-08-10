@@ -1,0 +1,14 @@
+@mixin transicion($propiedad: all) { //evaluar si alfin queda "transicion" o "transicion-basica" para que no se confunda con "transition"
+	@include transition($propiedad ease-in-out 0.2s);
+	@include gpu-aceleracion();
+}
+
+@mixin transicion-basica {
+	@include transition(all ease-in-out 0.2s);
+	@include gpu-aceleracion();
+}
+
+@mixin transicion-rapida {
+	@include transition(all ease-in-out 0.12s);
+	@include gpu-aceleracion();
+}
