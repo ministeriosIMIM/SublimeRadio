@@ -1,0 +1,46 @@
+// Compass
+@import "compass";
+
+// Pie
+@import "compass/css3/pie"; 
+@import "compass/css3";
+$pie-behavior: url(PIE.htc);
+
+
+//colores
+
+$azul-aguamarina: #00e4e5;
+$azul-rey: #004567;
+$azul-twitter: #00aced;
+$azul-facebook: #3b5999;
+
+//logo
+
+$logo: "\e602";
+$logo-a: "\e600";
+$logo-b: "\e601";
+$logo-mini: "\e607";
+$logo-mini-a: "\e606";
+$logo-mini-b: "\e605";
+
+
+//iconos
+
+$icono-twitter: "\e604";
+$icono-facebook: "\e603";
+
+
+//opacidades
+
+$opacidad-10: 0.1;
+$opacidad-20: 0.2;
+$opacidad-30: 0.3;
+$opacidad-40: 0.4;
+$opacidad-50: 0.5;
+$opacidad-60: 0.6;
+$opacidad-70: 0.7;
+$opacidad-80: 0.8;
+$opacidad-90: 0.9;
+
+
+@import "modulos/all";
