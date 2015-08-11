@@ -17,3 +17,12 @@
     @include transform(translatex(8px));
   }
 }
+
+@include keyframes(anim-parlante) {
+  0%, 100% {
+    padding: 15px;
+  }
+  50% {
+    padding: 14px;
+  }
+}
