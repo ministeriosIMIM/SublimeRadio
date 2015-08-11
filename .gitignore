@@ -7,8 +7,11 @@ Icon?*
 *.log
 .htaccess
 .sass-cache/
+<<<<<<< HEAD
+=======
 .sass-cache/*
 **/.sass-cache/*
+>>>>>>> dev
 sitemap.xml
 sitemap.xml.gz
 wp-config.php
@@ -20,4 +23,12 @@ wp-content/cache/
 wp-content/upgrade/
 wp-content/uploads/
 wp-content/wp-cache-config.php
+<<<<<<< HEAD
+dev/
+dev/*
 webhook.php
+html/
+html/*
+=======
+webhook.php
+>>>>>>> dev
