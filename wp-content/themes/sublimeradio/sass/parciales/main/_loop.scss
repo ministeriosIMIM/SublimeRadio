@@ -1,0 +1,16 @@
+#loop {
+
+	@media(max-width: 799px) {
+		display: none;
+	}
+
+	position: fixed;
+	width: auto;
+	height: auto;
+	min-width: 100%;
+	min-height: 100%;
+	top: 50%;
+	left: 50%;
+	@include translate(-50%,-50%);
+	z-index: -100;
+}

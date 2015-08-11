@@ -1,16 +1,64 @@
 <!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Sublime Radio | Con el poder de la palabra</title>
-<script src="//api.html5media.info/1.1.8/html5media.min.js"></script>
-</head>
-<body style="background-image:url(temporal/fondo-temporal.jpg); background-size:cover;">
-	<h1 style="display:none;">Sublime Radio</h1>
-	<div style="width:800px; height:316px; position:absolute; top:50%; margin-top:-158px; margin-left:-400px; left:50%;">
-		<img src="temporal/temporal.png" style="width:100%; height:auto;">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Sublime Radio | ¡Con el poder de la palabra!</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="wp-content/themes/sublimeradio/favicon.ico" />
+        <link rel="apple-touch-icon" href="wp-content/themes/sublimeradio/apple-touch-icon.png">
+
+        <link rel="stylesheet" href="wp-content/themes/sublimeradio/css/bootstrap.min.css">
+        <link rel="stylesheet" href="wp-content/themes/sublimeradio/css/main.css">
+
+        <script src="wp-content/themes/sublimeradio/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+    
+    <div id="intro" class="container-fluid">
+    	<div class="row">
+        	<div class="col-md-6">
+            	<img src="wp-content/themes/sublimeradio/img/logo-intro.png" class="img-responsive">
+            </div>
+            <div class="col-md-6">
+            	<section id="reproductor">
+                	<img src="wp-content/themes/sublimeradio/img/reproductor.png" class="img-responsive">
+                	<audio id="audio" controls autoplay>
+    					<source src="http://50.62.23.55:8777/;" type="audio/mpeg" />                      
+					</audio>
+                </section>
+            </div>
+        </div>
+        <img class="fondo" src="wp-content/themes/sublimeradio/img/fondo-loop.jpg">
     </div>
-    <audio controls autoplay style="display:none;">
-    	<source src="http://50.62.23.55:8777/;" type="audio/mpeg" />                      
-	</audio>
-</body>
+    
+    <video id="loop" autoplay loop poster="wp-content/themes/sublimeradio/img/fondo-loop.jpg">
+    	<source class="video" src="wp-content/themes/sublimeradio/video/loop.webm" type="video/webm">
+        <source class="video" src="wp-content/themes/sublimeradio/video/loop.mp4" type="video/mp4">
+    </video>
+    
+	
+    
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../wp-content/themes/sublimeradio/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="wp-content/themes/sublimeradio/js/vendor/bootstrap.min.js"></script>
+
+        <script src="wp-content/themes/sublimeradio/js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>

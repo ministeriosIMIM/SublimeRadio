@@ -1,0 +1,19 @@
+//logo
+
+@include keyframes(anim-logo-a) {
+  0%, 100% {
+    @include transform(translateX(0px));
+  }
+  50% {
+    @include transform(translateX(-8px));
+  }
+}
+
+@include keyframes(anim-logo-b) {
+  0%, 100% {
+    @include transform(translateX(0px));
+  }
+  50% {
+    @include transform(translatex(8px));
+  }
+}
