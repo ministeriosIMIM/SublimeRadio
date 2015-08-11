@@ -1,0 +1,93 @@
+html, body {
+    font-family: 'Exo 2', sans-serif;
+}
+
+
+h1 {
+	color: $azul-corporativo;
+}
+
+h2 {
+    font-weight: 300;
+    color: $azul-claro;
+    font-size: 2.5em;
+    margin-top: 60px;
+    padding-bottom: 20px;
+}
+
+h3 {
+     font-size: 2.1em;
+     letter-spacing: -0.02em;
+     color: $azul-oscuro;
+     margin-top:50px;
+     margin-bottom: 30px;
+}
+
+h4 {
+     color: $azul-corporativo;
+     //font-size: 1.8em;
+}
+
+p, ul {
+    //line-height: 2em;
+    font-size: 1.4em;
+    font-weight: 300;
+    line-height: 1.7em;
+}
+
+ul {
+    li {
+        margin-bottom: 20px;
+    }
+}
+
+b, strong {
+    font-weight: 500;
+}
+
+table {
+    font-size: 1.2em;
+    line-height: 1.5em;
+
+    th {
+        font-weight: 600;
+    }
+
+    td {
+        font-weight: 300;
+    }
+}
+
+em {
+    font-size: 1.3em;
+}
+
+p, ul li, strong, b, address, em, label, table {
+    color: $gris;
+}
+
+a {
+	@include transicion-rapida();
+}
+
+
+blockquote {
+    // position: relative;
+
+    // &:before {
+    //     content: '"';
+    //     display: block;
+    //     position: absolute;
+    //     left: 0px;
+    // }
+
+    // &:after {
+    //     content: '"';
+    //     display: block;
+    //     position: absolute;
+    //     right: 0px;
+    // }
+
+    // p {
+    // }
+}

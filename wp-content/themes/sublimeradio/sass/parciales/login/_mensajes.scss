@@ -1,0 +1,213 @@
+@import url(https://fonts.googleapis.com/css?family=Exo+2:400italic,800,400,800italic);
+
+body {
+  background-color: #002c53;
+  background-image: url(../../wp-content/themes/gc-intranet/img/fondo-titular.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  -webkit-background-size: 300% auto;
+  -moz-background-size: 300% auto;
+  -o-background-size: 300% auto;
+  background-size: 300% auto;
+  #login {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    h1 {
+      a {
+        background-image: url(../../wp-content/themes/gc-intranet/img/logo-login.png);
+        width: 200px;
+        height: 105px;
+        -webkit-background-size: 100% auto;
+        -moz-background-size: 100% auto;
+        -o-background-size: 100% auto;
+        background-size: 100% auto;
+      }
+      &:after {
+        position: relative;
+        display: block;
+        content: 'Este es un espacio de colaboración interno para los miembros del equipo. La distribución, reproducción o uso de la información contenida en este sitio está restringida para temas exclusivamente de Governance Consultants.';
+        color: white;
+        font-style: italic;
+        border-top: 1px solid #65adda;
+        padding-top: 20px;
+        text-align: center;
+        font-weight: normal;
+        margin: 0 auto;
+        width: 258px;
+        font-size: 0.5em;
+        line-height: 1.5em;
+      }
+    }
+    .message {
+      background-color: transparent;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      border: 1px solid red;
+      text-align: center;
+      color: red;
+      padding: 10px;
+      margin: 10px 20px 0 20px;
+      font-style: italic;
+      line-height: 1.4em;
+      font-size: 1em;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px;
+    }
+    #login_error, .galogin-logout {
+      font-style: italic;
+      color: red;
+      background-color: transparent;
+      border: 1px solid red;
+      text-align: center;
+      margin: 10px 20px 0 20px;
+      font-size: 0.9em;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+    #login_error a, .galogin-logout a {
+      color: #65adda;
+      display: inline-block;
+      white-space: nowrap;
+      -webkit-transition: all ease-in-out;
+      -webkit-transition-delay: 0s;
+      -moz-transition: all ease-in-out 0s;
+      -o-transition: all ease-in-out 0s;
+      transition: all ease-in-out 0.12s;
+    }
+    #login_error a:hover, .galogin-logout a:hover {
+      color: white;
+    }
+    #login_error .dominio-correcto, .galogin-logout .dominio-correcto, #login_error .dominio-incorrecto, .galogin-logout .dominio-incorrecto {
+      font-weight: 800;
+    }
+    #login_error {
+      -webkit-transition: all ease-in-out;
+      -webkit-transition-delay: 0s;
+      -moz-transition: all ease-in-out 0s;
+      -o-transition: all ease-in-out 0s;
+      transition: all ease-in-out 0.12s;
+      + #loginform {
+        pointer-events: none;
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        opacity: 0;
+      }
+    }
+    .galogin-logout {
+      width: 200px !important;
+    }
+    #loginform {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      -webkit-transition: all ease-in-out;
+      -webkit-transition-delay: 0s;
+      -moz-transition: all ease-in-out 0s;
+      -o-transition: all ease-in-out 0s;
+      transition: all ease-in-out 0.2s;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      .galogin {
+        background-color: transparent;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        font-size: 0;
+        height: auto;
+        a {
+          display: inline-block;
+          white-space: nowrap;
+          width: 90px;
+          height: 90px;
+          background-image: url(../../wp-content/themes/gc-intranet/img/icono-acceder.png);
+          margin: 0 auto;
+          -webkit-background-size: 100% auto;
+          -moz-background-size: 100% auto;
+          -o-background-size: 100% auto;
+          background-size: 100% auto;
+          -webkit-transition: all ease-in-out;
+          -webkit-transition-delay: 0s;
+          -moz-transition: all ease-in-out 0s;
+          -o-transition: all ease-in-out 0s;
+          transition: all ease-in-out 0.12s;
+          &:focus {
+            outline: none;
+            width: 80px;
+            height: 80px;
+          }
+        }
+      }
+      .galogin-or {
+        display: none;
+        ~ p {
+          display: none;
+        }
+      }
+    }
+    #backtoblog {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
+  }
+}
+
+@media (min-width: 768px) {
+  body #login h1 a {
+    width: 258px;
+    height: 136px;
+  }
+}
+
+@media (min-width: 768px) {
+  body #login h1:after {
+    font-size: 0.5em;
+    line-height: 1.6em;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  body #login #loginform .galogin a {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body #login #loginform .galogin a {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (min-width: 768px) {
+  body #login #loginform .galogin a:focus {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body #login #loginform .galogin a:focus {
+    width: 110px;
+    height: 110px;
+  }
+}

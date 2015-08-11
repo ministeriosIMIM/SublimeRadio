@@ -1,0 +1,51 @@
+#intro {
+
+	.row {
+
+		@media(min-width: 768px) {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: auto;
+			height: auto;
+			@include translate(-50%,-50%);
+		}
+
+		[class*='col'] {
+			padding-top: 40px;
+
+			img {
+				margin: 0 auto;
+			}
+
+			@media(min-width: 992px) {
+				padding: 0 15px;
+
+				&:last-child {
+					border-left: 1px solid $azul-aguamarina;
+				}
+			}
+
+			@media(min-width: 1200px) {
+				padding: 0 40px;
+			}
+		}
+	}
+
+	.fondo {
+		position: fixed;
+		width: auto;
+		height: auto;
+		min-width: 100%;
+		min-height: 100%;
+		z-index: -100;
+		top: 50%;
+		left: 50%;
+		@include translate(-50%,-50%);
+		z-index: -100;
+
+		@media(min-width: 800px) {
+			display: none;
+		}
+	}
+}
