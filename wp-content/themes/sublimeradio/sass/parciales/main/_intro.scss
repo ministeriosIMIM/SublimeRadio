@@ -18,11 +18,17 @@
 				margin: 0 auto;
 			}
 
+			&:last-child {
+				padding-bottom: 40px;
+			}
+
 			@media(min-width: 992px) {
 				padding: 0 15px;
 
 				&:last-child {
 					border-left: 1px solid $azul-aguamarina;
+					padding-bottom:0px;
+
 				}
 			}
 
