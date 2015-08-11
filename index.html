@@ -11,7 +11,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="wp-content/themes/sublimeradio/favicon.ico" />
         <link rel="apple-touch-icon" href="wp-content/themes/sublimeradio/apple-touch-icon.png">
-
+		
+        <link href='http://fonts.googleapis.com/css?family=Raleway:800,500,400' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="wp-content/themes/sublimeradio/css/bootstrap.min.css">
         <link rel="stylesheet" href="wp-content/themes/sublimeradio/css/main.css">
 
@@ -25,11 +26,20 @@
             	<img src="wp-content/themes/sublimeradio/img/logo-intro.png" class="img-responsive">
             </div>
             <div class="col-md-6">
-            	<section id="reproductor">
-                	<img src="wp-content/themes/sublimeradio/img/reproductor.png" class="img-responsive">
+            	<section id="reproductor" class="on">
+                	<span id="estado">Señal de Prueba</span>
+                	<div id="parlante">
+                    	<img src="wp-content/themes/sublimeradio/img/parlante.png" class="img-responsive">
+                    </div>
                 	<audio id="audio" controls autoplay>
-    					<source src="http://50.62.23.55:8777/;" type="audio/mpeg" />                      
+    					<source src="http://50.62.23.55:8777/;" type="audio/ogg" />               
 					</audio>
+                    <div id="audioplayer">
+                    	<button id="pButton" class="pause" onclick="play()"></button>
+                        <div id="timeline">    
+  		  					<div id="playhead"></div>
+  						</div>
+                    </div>
                 </section>
             </div>
         </div>
