@@ -1,90 +1,25 @@
 var reproductor = document.getElementById('reproductor'); // id for audio element
-
-var music = document.getElementById('audio'); // id for audio element
-var duration; // Duration of audio clip
-var pButton = document.getElementById('pButton'); // play button
-
-var playhead = document.getElementById('playhead'); // playhead
-
+var audio = document.getElementById('audio'); // id for audio element
+var volumen = document.getElementById('volumen'); // id for audio element
 var timeline = document.getElementById('timeline'); // timeline
-// timeline width adjusted for playhead
 var timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
 
-// timeupdate event listener
-music.addEventListener("timeupdate", timeUpdate, false);
-
-//Makes timeline clickable
-timeline.addEventListener("click", function (event) {
-	moveplayhead(event);
-	music.currentTime = duration * clickPercent(event);
-}, false);
-
-// returns click as decimal (.77) of the total timelineWidth
-function clickPercent(e) {
-	return (e.pageX - timeline.offsetLeft) / timelineWidth;
-}
-
-// Makes playhead draggable 
-playhead.addEventListener('mousedown', mouseDown, false);
-window.addEventListener('mouseup', mouseUp, false);
-
-// Boolean value so that mouse is moved on mouseUp only when the playhead is released 
-var onplayhead = false;
-// mouseDown EventListener
-function mouseDown() {
-	onplayhead = true;
-	window.addEventListener('mousemove', moveplayhead, true);
-	music.removeEventListener('timeupdate', timeUpdate, false);
-}
-// mouseUp EventListener
-// getting input from all mouse clicks
-function mouseUp(e) {
-	if (onplayhead == true) {
-		moveplayhead(e);
-		window.removeEventListener('mousemove', moveplayhead, true);
-		// change current time
-		music.currentTime = duration * clickPercent(e);
-		music.addEventListener('timeupdate', timeUpdate, false);
-	}
-	onplayhead = false;
-}
-// mousemove EventListener
-// Moves playhead as user drags
-function moveplayhead(e) {
-	var newMargLeft = e.pageX - timeline.offsetLeft;
-	if (newMargLeft >= 0 && newMargLeft <= timelineWidth) {
-		playhead.style.marginLeft = newMargLeft + "px";
-	}
-	if (newMargLeft < 0) {
-		playhead.style.marginLeft = "0px";
-	}
-	if (newMargLeft > timelineWidth) {
-		playhead.style.marginLeft = timelineWidth + "px";
-	}
-}
-
-// timeUpdate 
-// Synchronizes playhead position with current point in audio 
-function timeUpdate() {
-	var playPercent = timelineWidth * (music.currentTime / duration);
-	playhead.style.marginLeft = playPercent + "px";
-	if (music.currentTime == duration) {
-		pButton.className = "";
-		pButton.className = "play";
-	}
-}
+//setup inicial
+audio.volume = 0.7;
+playhead.style.marginLeft = timelineWidth*0.7 + "0px";
+volumen.style.width = timelineWidth*0.7 + "0px";
 
 //Play and Pause
 function play() {
-	// start music
-	if (music.paused) {
-		music.play();
+	// start audio
+	if (audio.paused) {
+		audio.play();
 		// remove play, add pause
 		reproductor.className = "on";
 		pButton.className = "";
 		pButton.className = "pause";
-	} else { // pause music
-		music.pause();
+	} else { // pause audio
+		audio.pause();
 		// remove pause, add play
 		reproductor.className = "";
 		pButton.className = "";
@@ -92,7 +27,51 @@ function play() {
 	}
 }
 
-// Gets audio file duration
-music.addEventListener("canplaythrough", function () {
-	duration = music.duration;  
+//Makes timeline clickable
+timeline.addEventListener("click", function (event) {
+	moveplayhead(event);
 }, false);
+
+// returns click as decimal (.77) of the total timelineWidth
+function volumenPorcentaje(e) {
+	return (e.pageX - $('#timeline').offset().left) / timelineWidth;
+}
+
+playhead.addEventListener('mousedown', mouseDown, false);
+window.addEventListener('mouseup', mouseUp, false);
+
+var onplayhead = false;
+// mouseDown EventListener
+function mouseDown() {
+    onplayhead = true;
+    window.addEventListener('mousemove', moveplayhead, true);
+    //music.removeEventListener('timeupdate', timeUpdate, false);
+}
+
+function mouseUp(e) {
+    if (onplayhead == true) {
+        moveplayhead(e);
+        window.removeEventListener('mousemove', moveplayhead, true);
+    }
+    onplayhead = false;
+}
+ 
+function moveplayhead(e) {
+    var newMargLeft = e.pageX - $('#timeline').offset().left;
+    if (newMargLeft >= 0 && newMargLeft <= timelineWidth) {
+        playhead.style.marginLeft = newMargLeft + "px";
+		volumen.style.width = newMargLeft + "px";
+		audio.volume = volumenPorcentaje(e);
+    }
+    if (newMargLeft < 0) {
+        playhead.style.marginLeft = "0px";
+		volumen.style.width = "0px";
+		audio.volume = 0;
+    }
+    if (newMargLeft > timelineWidth) {
+        playhead.style.marginLeft = timelineWidth + "px";
+		volumen.style.width = timelineWidth + "px";
+		audio.volume = volumenPorcentaje(e);
+    }
+	
+}
