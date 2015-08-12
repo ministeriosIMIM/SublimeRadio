@@ -32,13 +32,19 @@
                     	<img src="wp-content/themes/sublimeradio/img/parlante.png" class="img-responsive">
                     </div>
                 	<audio id="audio" controls autoplay>
-    					<source src="http://50.62.23.55:8777/;" type="audio/mpeg" />          
+    					<source src="http://50.62.23.55:8777/;" type="audio/mp4" />               
 					</audio>
                     <div id="audioplayer">
                     	<button id="pButton" class="pause" onclick="play()"></button>
                         <div id="timeline">    
   		  					<div id="playhead"></div>
+                            <div id="volumen"></div>
   						</div>
+                    </div>
+                    <div id="metadato">
+                    	<p><span data-shoutcast-value="songtitle"></span></p>
+                    </div>
+                    <div id="log">
                     </div>
                 </section>
             </div>
@@ -55,9 +61,10 @@
     
 	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="../wp-content/themes/sublimeradio/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="wp-content/themes/sublimeradio/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="wp-content/themes/sublimeradio/js/vendor/bootstrap.min.js"></script>
+        <script src="wp-content/themes/sublimeradio/js/vendor/jquery.shoutcast.easy.min.js?host=sublimeradio.org&port=8777"></script>
 
         <script src="wp-content/themes/sublimeradio/js/main.js"></script>
 

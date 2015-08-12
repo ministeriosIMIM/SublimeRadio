@@ -26,3 +26,39 @@
     padding: 14px;
   }
 }
+
+@include keyframes(left-one) {
+  0% {
+    @include translateX(100%);
+  }
+  50% {
+    @include translateX(0);
+  }
+  100% {
+    @include translateX(-100%);
+  }
+}
+
+@include keyframes(left-two) {
+  0% {
+    @include translateX(100%);
+  }
+  20% {
+    @include translateX(100%);
+  }
+  40% {
+    @include translateX(0);
+  }
+  60% {
+    @include translateX(-100%);
+  }
+  61% {
+    @include translateX(100%);
+  }
+  80% {
+    @include translateX(0);
+  }
+  100% {
+    @include translateX(-100%);
+  }
+}
