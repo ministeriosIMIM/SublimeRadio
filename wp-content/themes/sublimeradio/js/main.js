@@ -5,9 +5,9 @@ var timeline = document.getElementById('timeline'); // timeline
 var timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
 
 //setup inicial
-audio.volume = 0.7;
-playhead.style.marginLeft = timelineWidth*0.7 + "0px";
-volumen.style.width = timelineWidth*0.7 + "0px";
+audio.volume = 0.9;
+playhead.style.marginLeft = timelineWidth*0.9 + "0px";
+volumen.style.width = timelineWidth*0.9 + "0px";
 
 //Play and Pause
 function play() {
